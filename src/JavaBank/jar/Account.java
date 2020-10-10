@@ -9,23 +9,23 @@ public class Account extends AbstractBankAccount {
   }
 
   private static int calculateInitialBonusValue( int amt ) {
-		if (amt >= 1 && amt <= 100) {
-			return 10;
-		} else if (amt <= 300) {
-			return 20;
-		} else {
-			return 30;
-		}
+    if (amt >= 1 && amt <= 100) {
+      return 10;
+    } else if (amt <= 300) {
+      return 20;
+    } else {
+      return 30;
+    }
     //endif
   }//end method calculateInitialBonusValue
 
   //make a deposit to the balance
   public void deposit( int amt ) {
-		if (amt > 100) {
-			balance = balance + (amt + (int) (bonusValue * 0.1));
-		} else {
-			balance = balance + amt;
-		}
+    if (amt > 100) {
+      balance = balance + (amt + (int) (bonusValue * 0.1));
+    } else {
+      balance = balance + amt;
+    }
   }
 
 
@@ -41,10 +41,7 @@ public class Account extends AbstractBankAccount {
 
   //print method
   public void print( ) {
-    System.out.println("\nBank Name       : " + getBankName() + "\n"
-        + "Account Holder  : " + accountname + "\n"
-        + "Account Number  : " + accountnum + "\n"
-        + "Account Balance : " + balance);
+    System.out.println(super.toString());
   }
 }
 

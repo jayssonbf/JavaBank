@@ -64,6 +64,11 @@ public abstract class AbstractBankAccount {
     balance=balance-amt;
   }
 
-
-
+  @Override
+  public String toString( ) {
+    return "\nBank Name       : " + getBankName() + "\n"
+        + "Account Holder  : " + accountname + "\n"
+        + "Account Number  : " + accountnum + "\n"
+        + "Account Balance : " + balance;
+  }
 }

@@ -14,7 +14,6 @@ public class testBank {
 		A1.print();
 		A2.print();
 		A3.print();
-	
 
 	}
 }

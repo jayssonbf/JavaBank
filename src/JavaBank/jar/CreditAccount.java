@@ -41,12 +41,11 @@ public class CreditAccount extends AbstractBankAccount {
   }
 
   //print method
-  public void print( ) {
-    System.out.println("\nBank Name       : " + getBankName() + "\n"
-        + "Account Holder  : " + accountname + "\n"
-        + "Account Number  : " + accountnum + "\n"
-        + "Account Balance : " + balance + "\n" +
-        "Credit limit    : " + creditLimit);
+
+
+  @Override
+  public String toString( ) {
+    return super.toString() + "\nCreditLimit     : " + creditLimit;
   }
 
   @Override

@@ -22,8 +22,9 @@ public class testCreditAccount {
     A1.print();
     A2.print();
     A3.print();
-    C1.print();
-    C2.print();
+    System.out.println(C1.toString());
+    System.out.println(C2.toString());
+
   }
 }
 
